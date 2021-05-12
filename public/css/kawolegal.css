@@ -1,0 +1,246 @@
+body{
+    color: white;
+}
+.home {/*inserts background image*/
+
+    background: url(/images/backgroundimage.jpg) no-repeat 0, 0;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color:rgba(49, 12, 12, 0.76)
+    
+  } 
+
+.navbar-home{    /*overwrites the default bootstrap nav properties*/
+    flex-direction: column;
+    border: none;
+    background-color: transparent;
+}
+
+#navbarothers{
+  background-color : #3e1616 ;
+  height: 120px;
+  width: 100%;
+}
+.navlinks{
+  padding-top: 30px;
+  padding-right: 120px;
+}
+
+.navlinks > li > a{ /*css for the positioning of the links*/
+   text-align: right;
+   padding-right: 20px;
+   font-family: Open Sans;
+   font-size: 14px;
+   font-style: normal;  
+}
+
+.navbar-home .navbar-nav > li > a { /*coloring of the links*/
+    color: red;
+    margin: 5px;
+}
+/* unvisited link */
+.navbar-home .navbar-nav > li > a:link {
+  color: red;
+}
+
+/* visited link */
+.navbar-home .navbar-nav > li > a:visited {
+  color: red;
+}
+
+
+
+/* active and hover properties */
+.navbar-default .navbar-nav > .active > a{
+  color: red;
+  background-color: transparent;
+  border: 1px solid red;
+}
+
+.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
+{
+  color: red;
+  background-color: transparent;
+  border: 1px solid red;
+
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav  > a:focus
+{
+  color: red;
+  background-color: transparent;
+  border: 1px solid red;
+
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home").
+ Show the link that contains should open and close the topnav (.icon) */
+ @media only screen 
+ and (max-width : 600px)  {
+  .navbar-default .navbar-nav a:not(:first-child){
+     display: none;}
+     
+     .navbar-default .navbar-nav a.icon {
+      float: left;
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+  
+#logo{/*padding for logo and object-fit for the background image to stretch for the entire width*/
+    padding-left: 100px;
+    object-fit: cover;
+   
+}
+
+.content{ /*css for the middle part*/
+    flex-direction: column;
+    width: 700px;
+    height: 300px;
+    margin: auto;
+    background-color: transparent;
+    z-index: 1;
+   
+}
+.homebtn{/*css  for the button*/
+    font-size: 25px;
+    background-color: #5dbcd2;
+    width: 250px;
+}
+
+.footer{ /*css for footer*/
+    height: 55px;
+    background-color: #3e1616;
+    color: white;  
+    margin-top: 25px;
+    width: 100%;
+}
+
+.rights{/*styles the text that says all rights reserved*/
+    text-align: center;
+    padding: 20px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.socials{/*removes default 'decorations' on list*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-right: 200px;/*gives space on right side of insta logo*/
+}
+
+.socials > li > a {/*gets the lists to display horizontally*/
+    float: left;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #5dbcd2; /*change color of social media icons*/
+  }
+
+.link{/*shift links to right of div*/
+    float: right;
+}
+
+/*STARTUPS PAGE CSS*/
+.search{
+    margin-top: 150px;
+}
+
+form.myform input[type=text] {/*css for search form*/
+    padding: 10px;
+    font-size: 15px;
+    font-weight: lighter;
+    border: 0.5px solid grey;
+    border-radius: 0.5rem;
+    float: left;
+    width: 80%;
+    height: 40px;
+    background: #f1f1f1;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+  
+form.myform button {/*css for button*/
+    float: left;
+    width: 10%;
+    height: 40px;
+    padding: 10px;
+    background: #286090;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    border: 0.5px solid grey;
+    border-left: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    text-align: center;
+
+}
+  
+form.myform button:hover {
+    background: #0b7dda;
+}
+
+.startup{
+    margin-top: 50px;
+}
+
+.startupscontent{
+    padding-left: 250px;
+}
+
+.startup > div> p{
+    font-weight: lighter;
+    background-color: black;
+    border: 2px solid black
+}
+#description{
+  color: black;
+}
+.images > img {
+  width: 100px;
+  height: 100px;
+  margin-left: 50px;
+
+}
+
+
+/*REGISTERPAGE CSS*/
+
+.registercontent{
+    margin-top: 150px;
+    color: black
+}
+
+
+#registerform{
+  text-align: left;
+  width: 80%;
+  margin: auto;
+  font-size: 14px;
+}
+
+/*LOGIN PAGE CSS*/
+
+.logincontent{
+    margin-top: 150px;
+    color: black;
+}
+
+#loginform{
+  text-align: left;
+  width: 80%;
+  margin: auto;
+  font-size: 14px;
+}
